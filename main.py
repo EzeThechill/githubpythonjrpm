@@ -8,7 +8,7 @@ quiz_data = {
     "¿Qué película presenta al personaje 'Jack Sparrow'?": "Piratas del Caribe",
     "¿Qué película animada está ambientada en el Día de los Muertos?": "Coco",
 }
-
+#hola
 print("🎥 ¡Bienvenido al Quiz de Películas! 🎥")
 print("Responde las siguientes preguntas para poner a prueba tu conocimiento sobre películas.")
 print("-" * 50)
