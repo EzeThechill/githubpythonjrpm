@@ -1,6 +1,8 @@
 import random
+from os import system
 
 # Diccionario con preguntas y respuestas - key son preguntas, values son respuestas correctas
+system("cls")
 quiz_data = {
     "¿En qué película aparece la frase 'Yo soy tu padre'?": "Star Wars",
     "¿Qué película tiene el récord de ser la más taquillera de todos los tiempos (hasta 2024)?": "Avatar",
@@ -10,14 +12,19 @@ quiz_data = {
 }
 #hola
 print("🎥 ¡Bienvenido al Quiz de Películas! 🎥")
-print("Responde las siguientes preguntas para poner a prueba tu conocimiento sobre películas.")
+print("Responde las siguientes preguntas para, \nponer a prueba tu conocimiento sobre películas.")
 print("-" * 50)
 
-preguntas = list(quiz_data.keys()) # convertir los keys en una lista
-# usar un método de random para barajar las preguntas
+print("Mezclando la lista____________________________")
+preguntas = list(quiz_data.keys()) # convertir los keys en una 
+random.shuffle(preguntas) # usar un método de random para barajar las preguntas
+for i in preguntas :
+    print (i)
+print("Lista mezclada____________________________")
+print("\n")
 
 for pregunta in preguntas: # bucle para iterar por todas las preguntas
-    respuesta = # preguntar al usuario por su respuesta
+    print(pregunta) # preguntar al usuario por su respuesta
 
     # si su respuesta es igual que la del quiz_data, es correcto!
     # usar .lower() para comprarar
