@@ -15,18 +15,25 @@ print("🎥 ¡Bienvenido al Quiz de Películas! 🎥")
 print("Responde las siguientes preguntas para, \nponer a prueba tu conocimiento sobre películas.")
 print("-" * 50)
 
-print("Mezclando la lista____________________________")
+#print("Mezclando la lista____________________________")
 preguntas = list(quiz_data.keys()) # convertir los keys en una 
 random.shuffle(preguntas) # usar un método de random para barajar las preguntas
-for i in preguntas :
-    print (i)
-print("Lista mezclada____________________________")
-print("\n")
-
+#for i in preguntas :
+    #print (i)
+#print("Lista mezclada____________________________")
+#print("\n")
+aciertos=0
+errores=0
 for pregunta in preguntas: # bucle para iterar por todas las preguntas
-    print(pregunta) # preguntar al usuario por su respuesta
+    respuesta = input(pregunta)# preguntar al usuario por su respuesta
+    if respuesta.lower() == quiz_data[pregunta].lower():
+        #print ("Correcto")   # si su respuesta es igual que la del quiz_data, es correcto!
+        aciertos = aciertos + 1    
 
-    # si su respuesta es igual que la del quiz_data, es correcto!
+
+print (f"Conseguiste {aciertos} de {len(quiz_data)}")
+
+
     # usar .lower() para comprarar
 
 # al final, mostrar los numeros correctos

@@ -1,0 +1,72 @@
+# 1.Mostrar un set con todos los correos SIN duplicar.
+# 2. Mostrar quien son los 
+# 3. Partiendode una lista de empleados crear una lista nueva con empleados unicos
+# suscriptores_existentes = {"bob","maria","lola","antonio"}
+# suscriptores_nuevos = {"bob", "lucia","pancho"}
+# # 1-----------------------------------------------------------------
+# correos_unicos = suscriptores_existentes | suscriptores_nuevos # unimos ambos sets
+# print (correos_unicos)
+# # 2-----------------------------------------------------------------
+# nuevos = suscriptores_nuevos - suscriptores_existentes # restamos difference
+# print (nuevos)
+# # 3-------------------------------------------------------------------
+# empleados=["bob","maria","sylvie","pancho", "bob","ana","marta"]
+# unicos = set(empleados)
+# print(unicos)
+# unicos=list(unicos)
+# print(unicos)
+# import os
+# os.system('cls' if os.name == 'nt' else 'clear')
+
+# def hello(**kwargs):
+#     print(type(kwargs))
+#     if "ing" in kwargs :
+#         print(kwargs["ing"])
+#     if "esp" in kwargs :
+#         print(kwargs["esp"])
+#     if "eus" in kwargs :
+#         print(kwargs["eus"])
+#     if "vie" in kwargs :
+#         print(kwargs["vie"])
+    # print("Hello")
+    # print("Hola")
+    # print("Kaixo")
+    # print("Xin chao")
+    
+# hello(ing="Hello", esp="Hola", eus="Kaixo", vie="Xin Chao")
+
+# kieres enviar un  correo
+# usar **kwargs para 
+
+import os
+os.system('cls' if os.name == 'nt' else 'clear')
+
+# def enviar_correo(**kwargs):
+#     #print(type(kwargs))
+#     if "recipiente" in kwargs :
+#             print ("recipiente" + kwargs["recipiente"])
+#     if "asunto" in kwargs :
+#             print ("asunto: " + kwargs["asunto"])
+#     if "cuerpo" in kwargs :
+#             print ("cuerpo: " + kwargs["cuerpo"])
+    
+# enviar_correo(recipiente="ckulhan@nazaret.eus", asunto="Hola" , cuerpo="Hola, qué tal")
+# enviar_correo(recipiente="pablo@nazaret.eus", asunto="Hola" , cuerpo="Hola, qué tal")
+
+
+acciones = {"MSFT":412, "NVDA":143, "REP":9}
+print(type(acciones))
+print (acciones["MSFT"])
+for k, v in acciones.items() : # item ( MSFT : 412 ) / keys (MSFT) / value (412)
+    print(k, v)
+for k in acciones.keys() : # item ( MSFT : 412 ) / keys (MSFT) / value (412)
+    print(k)
+for  v in acciones.values() : # item ( MSFT : 412 ) / keys (MSFT) / value (412)
+    print(v)
+
+acciones["BBVA"] = 120
+print (acciones)
+
+acciones.update({"DSV" : 70 , "SJL" :60 })
+print (acciones)
+    
