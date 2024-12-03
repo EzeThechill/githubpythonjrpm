@@ -1,3 +1,9 @@
+import winsound
+
+from os import system
+system("cls")
+
+
 class Guitar :
     def __init__(self, marca, cuerdas) :
         self.marca = marca
@@ -14,6 +20,7 @@ class BassGuitar(Guitar) :
         self.strap = strap
     def tocar(self):
         print("brooo, brooo, brooo")
+        winsound.Beep(40,2)
 class Band:
     def __init__ (self, instrumentos):
         self.instrumentos = instrumentos
