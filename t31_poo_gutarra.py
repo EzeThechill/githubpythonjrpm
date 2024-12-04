@@ -20,7 +20,7 @@ class BassGuitar(Guitar) :
         self.strap = strap
     def tocar(self):
         print("brooo, brooo, brooo")
-        winsound.Beep(40,2)
+        winsound.Beep(750,400)
 class Band:
     def __init__ (self, instrumentos):
         self.instrumentos = instrumentos
