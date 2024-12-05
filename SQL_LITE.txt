@@ -1,0 +1,39 @@
+Khan academy SQL 
+
+CREATE TABLE personas (id INTEGER PRIMARY KEY, nombre TEXT, apellido TEXT , salario REAL);
+
+INSERT INTO personas ( id, nombre, apellido, salario)
+values (1, "Juan", "Fernandez", 1200);
+INSERT INTO personas ( id, nombre, apellido, salario)
+values (2, "Jon", "Doe", 1400);
+
+SELECT * FROM personas
+WHERE salario >= 1200;
+
+UPDATE personas
+SET apellido = "Nuevo Apellido"
+WHERE id =2;
+
+DELETE FROM personas
+WHERE id = 2;
+
+SELECT * FROM personas
+
+# ========== INSTRUMENTOS ==========
+CREATE TABLE instrumentos (id INTEGER PRIMARY KEY, nombre TEXT, precio REAL);
+
+INSERT INTO instrumentos VALUES (1, "Trompeta", 1500);
+INSERT INTO instrumentos VALUES (2, "Tambor", 800);
+INSERT INTO instrumentos VALUES (3, "Ocarina", 2001);
+
+SELECT * FROM instrumentos;
+
+SELECT precio FROM instrumentos;
+
+UPDATE instrumentos SET precio=2100 WHERE id=3;
+
+SELECT * FROM instrumentos;
+
+DELETE FROM instrumentos WHERE id=2;
+
+SELECT * FROM instrumentos;
