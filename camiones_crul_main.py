@@ -34,8 +34,8 @@ def alta_camiones():
     INSERT INTO CAMIONES (TUCK_NUMBER, EURO_TYPE, MODEL)
     VALUES (?, ?, ?)
     """
-    camiones = camiones_crul(truck_plate, euro_tipo, modelo )    
-    cursor.execute(sql,(camiones.truck_plate, camiones.euro_tipo, camiones.modelo))
+    camiones = borrar_camiones(truck_plate, euro_tipo, modelo )    
+    cursor.execute(sql,(camiones_crul.TRUCK_NUMBER, camiones.euro_tipo, camiones.modelo))
     
     connection.commit()
     connection.close()
